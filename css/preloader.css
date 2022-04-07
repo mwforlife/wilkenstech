@@ -1,0 +1,75 @@
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,25,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.subpreloader{
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    border-top: none;
+    border-left: none;
+    border-radius: 50%;
+    animation: girar linear 2s infinite;
+}
+
+.preloader_text{
+    font-size: 16px;
+    font-weight: bold;
+    animation: cambiar linear 4s infinite;
+}
+
+@keyframes girar{
+     from{
+        transform: rotate(0deg);
+    }
+    
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cambiar{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.1;
+    }
+    
+    20%{
+        opacity: 0.2;
+    }
+    
+    30%{
+        opacity: 0.3;
+    }
+    
+    40%{
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    70%{
+        opacity: 0.7;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}

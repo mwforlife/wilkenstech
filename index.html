@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Wilkens Tech</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="icon" href="img/logo/Logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.style.css">
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+    
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+   <!--------PRELOADER------------>
+    <div class="preloader">
+        <div class="subpreloader">
+            
+        </div>
+        <p class="preloader_text">Cargando</p>
+    </div>
+    <!--------------------------------->
+     <!------------HEADER--------------------->
+    
+    <header class="header"> 
+       
+       <!------------MENU------------->
+        <div class="menu">
+            <nav class="menu__content">
+                <img src="img/logo/Logo.png" width="72" class="menu__logo" alt="Wilkens Tech Logo">
+                
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#" class="nav__link" data-bs-toggle="modal" data-bs-target="#servicemodal">Servicio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" data-bs-toggle="modal" data-bs-target="#companymodal">Compania</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" data-bs-toggle="modal" data-bs-target="#contactmodal">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="sign__button">
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="#" class="nav__link" data-bs-toggle="modal" data-bs-target="#loginmodal">Login</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active" data-bs-toggle="modal" data-bs-target="#registermodal">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="landing">
+            <h3>Bienvenido a Wilkens Tech</h3>
+            <p>La mejor opcion moderna de impulsar tu negocio</p>
+            <p class="landing__buttons">
+            <button class="landing__button landing__button--active" data-bs-toggle="modal" data-bs-target="#registermodal">Registrate</button>
+            <button class="landing__button">Leer más</button>
+            </p>
+        </div>
+    </header>
+    
+    <!----------------MAIN---------------->
+    <main>
+        
+        <!-------------About----------------->
+        <div class="about">
+            <h4 class="titulo animate__animated animate__fadeInUp">Acerca de Nosotros</h4>
+            
+            <div class="about__content">
+               <div class="about__text">
+                    <h4 class="subtitulo animate__animated animate__fadeInUp">
+                        Desarrollo de software
+                    </h4>
+                    <p class="animate__animated animate__fadeInUp">Desarrollamos software a medida, todo lo que solicitan nuestros clientes, se lo diseñamos. desarrollamos software en distintas plataformas, movil, escritorio, web.</p>
+                    <h4 class="subtitulo animate__animated animate__fadeInUp">
+                        Soporte Tecnico
+                    </h4>
+                    <p class="about__paragraph animate__animated animate__fadeInUp">
+                    Damos soporte tecnico para todos los clientes que lo requieren, formateo de PC, cambios de componentes, asistencia virutal y presencial , además ofrecemos servicicios a domicilio dependiendo de donde se ubica el cliente.
+                    </p>
+                </div>
+                <div class="about__picture">
+                     <figure>
+                         <img src="img/svg_icons/illustration-editor-desktop.svg" alt="" class="about__image">
+                     </figure>
+                </div>
+            </div>
+        </div>
+        
+        <!-------------CONTACT-------------->
+        <div class="contact">
+           <h3 class="titulo animate__animated animate__fadeInUp">Contactanos</h3>
+           <div class="contact__content">
+            <figure class="contact__picture">
+                <img  alt="contact__Illustration" class="contact__image">
+            </figure>
+            
+            <div class="contact__inputs animate__animated animate__fadeInUp">
+              <form action="">
+               <label for="">Nombre <span class="required">*</span></label>
+               <input type="text" placeholder="Ingresa tu nombre" class="form__input">
+               <label for="">Telefono</label>
+               <input type="number" placeholder="912345678" class="form__input">
+               <label for="">Correo Electronico <span class="required">*</span></label>
+               <input type="email" placeholder="example@mail.com" class="form__input"> 
+               <label for="">Comentario<span class="required">*</span></label>
+               <textarea name="" id="" cols="30" rows="10" class="form__area"></textarea>
+                <button type="submit" class="submit">Enviar</button>
+              </form>
+            </div>
+               
+           </div>
+           
+        </div>
+    </main>
+    
+    <!---------Footer--------------->
+    <footer class="footer">
+       <div class="footer__content">
+            <figure>
+                <img src="img/logo/Logo.png" width="75" alt="">
+            </figure>
+
+            <ul class="menu__footer">
+                <li class="menu__item menu__item--title">Servicios</li>
+                <li class="menu__item"></li>
+                <li class="menu__item"><a href="">Informacion General</a></li>
+                <li class="menu__item"><a href="">Precios</a></li>
+            </ul>
+
+            <ul class="menu__footer">
+               <li class="menu__item  menu__item--title">Company</li>
+               <li class="menu__item"></li>
+                <li class="menu__item"><a href="">Acerca de</a></li>
+                <li class="menu__item"><a href="">Equipo</a></li>
+                <li class="menu__item"><a href="">Blog</a></li>
+            </ul>
+
+
+            <ul class="menu__footer">
+                <li class="menu__item  menu__item--title">Contacto</li>
+                <li class="menu__item"></li>
+                <li class="menu__item"><a href=""><img src="img/svg_icons/instagram.svg" alt=""></a></li>
+                <li class="menu__item"><a href=""><img src="img/svg_icons/facebook.svg" alt=""></a></li>
+                <li class="menu__item"><a href=""><img src="img/svg_icons/whatsapp.svg" alt=""></a></li>
+            </ul>
+       </div>
+    </footer>
+    
+    
+    
+    <!---------------REGISTER MODAL----------------->
+    <div class="modal" tabindex="-1" id="registermodal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title subtitulo">Registro de Usuarios</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+           <form action="">
+            <div class="row">
+                <div class="col">
+                    <label for="">Nombre:</label>
+                    <input type="text" placeholder="Ingrese Su nombre" class="form__input">
+                </div>
+            </div>
+               
+            <div class="row">
+                <div class="col">
+                    <label for="">Apellido</label>
+                    <input type="text" class="form__input" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="">Correo electronico</label>
+                    <input type="email" class="form__input" placeholder="Ingrese su correo electronico">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="">Usuario:</label>
+                    <input type="text" class="form__input" placeholder="Nombre de usuario">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="">Contraseña:</label>
+                    <input type="password" class="form__input" placeholder="Ingrese Su contraseña">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="">Confirmar contraseña:</label>
+                    <input type="password" placeholder="confirmar contraseña" class="form__input">
+                </div>
+            </div>
+            
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="reset" class="modal__button modal__button--close">Restablecer</button>
+            <button type="button" class="modal__button modal__button--save">Registrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!---------------LOGIN MODAL----------------->
+    <div class="modal" tabindex="-1" id="loginmodal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="login__title">Login</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+           <form action="">
+            <div class="row">
+                <div class="col">
+                    <label for="">Usuario:</label>
+                    <input type="text" class="form__input" placeholder="Nombre de usuario">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="">Contraseña:</label>
+                    <input type="password" class="form__input" placeholder="Ingrese Su contraseña">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="" class="forgot__password">¿Olvidaste tu contraseña?</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="modal__button modal__button--login">Iniciar Sesion</button>
+                </div>
+            </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+           <div class="row">
+               <div class="col text-center">
+                 <p class="footer__text">No estas registrado <a href="">Registrate</a></p>
+               </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+        <!---------------Company MODAL----------------->
+    <div class="modal" tabindex="-1" id="companymodal">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="login__title">Compania</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           
+           
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!---------------Services MODAL----------------->
+    <div class="modal" tabindex="-1" id="servicemodal">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body service-body">
+          <button type="button" class="btn-close close__service" data-bs-dismiss="modal" aria-label="Close"></button>
+          
+          <!----------------------------Service header----------------------------->
+           <div class="service__header">
+               <h3 class="title__small animate__animated animate__backInDown">Wilkens Tech</h3>
+               <div class="animate animate-rotate-1">
+                   <h1 class="ah-headline">
+                       <span class="ah-words-wrapper">
+                           <b class="margin-1 is-visible">Formateo de PC</b>
+                           <b class="margin-2">Desarrollo de software</b>
+                           <b class="margin-1">Soporte de TI</b>
+                       </span>
+                   </h1>
+               </div>
+               
+               
+               <!--<h2 class="title__md title1 animate__animated animate__fadeInUp">
+                   <span class="letters letters-1">Formateo de PC</span>
+                   <span class="letters letters-2" hidden>Desarrollo de software</span>
+                   <span class="letters letters-3" hidden>Soporte de TI</span>
+               </h2>-->
+               <p class="text__service animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt dolorum, vel delectus quae ratione odit quidem ipsa similique, nulla animi adipisci, voluptate! Qui, iure aut tempora, unde quidem dolores officiis.</p>
+               <div class="buttons animate__animated animate__fadeInUp">
+                   <button class="btn__service btn__service--cotizar animate__animated animate__backInLeft">
+                   Cotiza un Servicio
+                   <img src="img/svg_icons/arrow_rigth_1.svg" alt="">
+                   </button>
+                   <button class="btn__service btn__service--simular animate__animated animate__backInRight">
+                   Simula un Servicio
+                   <img src="img/svg_icons/arrow_rigth_1.svg" alt="">
+                   </button>
+               </div>
+           </div>
+           <!---------------------------------------------------------------------->
+           <!----------------------Service Platform-------------------------------->
+           <div class="service__platform">
+               <div class="service__platform__card">
+                   <img class="image__service" src="img/svg_icons/undraw_segment_analysis_re_ocsl.svg" alt="">
+                   <h3 class="title__servic">Desarrollo Software</h3>
+                   <p class="text__servic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sit doloribus consequuntur voluptatibus aliquid odio quod blanditiis quae atque, praesentium, ut libero mollitia magni ipsum voluptatem architecto nesciunt quisquam laboriosam?</p>
+                   <a href="" class="mas">Leer mas <img class="service__img" src="img/svg_icons/arrow_rigth.svg" alt=""></a>
+               </div>
+               
+               <div class="service__platform__card  service__platform__card--active">
+                   <img class="image__service" src="img/svg_icons/undraw_digital_nomad_re_w8uy.svg" alt="">
+                   <h3 class="title__servic title__servic--active">Servicio Digital</h3>
+                   <p class="text__servic text__servic--active">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sit doloribus consequuntur voluptatibus aliquid odio quod blanditiis quae atque, praesentium, ut libero mollitia magni ipsum voluptatem architecto nesciunt quisquam laboriosam?</p>
+                   <a href="" class="mas">Leer mas <img class="service__img" src="img/svg_icons/arrow_rigth_1.svg" alt=""></a>
+               </div>
+               
+               <div class="service__platform__card">
+                   <img class="image__service" src="img/svg_icons/undraw_segment_analysis_re_ocsl.svg" alt="">
+                   <h3 class="title__servic">Consultoria Informatica</h3>
+                   <p class="text__servic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sit doloribus consequuntur voluptatibus aliquid odio quod blanditiis quae atque, praesentium, ut libero mollitia magni ipsum voluptatem architecto nesciunt quisquam laboriosam?</p>
+                   <a href="" class="mas">Leer mas <img class="service__img" src="img/svg_icons/arrow_rigth.svg" alt=""></a>
+               </div>
+           </div>
+           <!-------------------------------------------------------------------->
+           <!-----------------------Nuestros Servicios--------------------------->
+           <div class="our__services">
+               <h3 class="services__subtitle">Nuestros Servicios</h3>
+               <p class="services__slogan">Realizamos todos nuestros servicios con la mejor dedicación para la satisfacción de nuestros clientes</p>
+               
+               <div class="progress1">
+                   <div class="progress__ball">
+                       
+                   </div>
+               </div>
+               
+               <section class="services__content">
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_bug_fixing_oc-7-a.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Formateo de PC</h3>
+                   <p class="services__text">¿Tienes tu computador que está lleno de documentos? ¿Imagenes? ¿Videos? y te gustaria formatearlo, porque te anda lento ¿y querés respaldar tus archivos? solo contactanos solitando tus servicios desde el catalogo de cliente.</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+                  
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_programming_re_kg9v.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Diseño de paginas web</h3>
+                   <p class="services__text">¿Tienes un pequeño negocio? ¿un nuevo emprendimiento? ¿Una pequeña comunidad? ¿y quieres crecer, dar a conocer al mundo tus brillantes ideas? nosotros te creamos tu pagina a medida, con los requerimientos que usted solicité.</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+                  
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_devices_re_dxae.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Aplicaciones Moviles</h3>
+                   <p class="services__text">La mayoria del porcentaje de personas tienen un smartphone, y quieres llegar a la mayor cantidad de personas posibles, pues habla con nosotros, te desarrollaremos la Aplicacion que necesitas, aplicable a tus necesidades</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+                  
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_online_test_gba7.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Instalación de Software</h3>
+                   <p class="services__text">hoy en día la tecnologia avanza más y más y su integracíon se está cada dia mas indispensable en las organizacion y por ende se utiliza muchos software para las tareas diarias. contactanos si necetas instalar algún software en tu computador.</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+                  
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_fixing_bugs_w7gi.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Soporte Tecnico</h3>
+                   <p class="services__text">¿Tu computador no te responde como te gustaria? se te acabo la licencia de tu office, de tu antivirus, te gustaria hacerle mantención a tu computador? ¿Cambiarle el disco duro, memoria ram, ponerlo como nuevo? Aqui estamos para ayudarte.</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+                  
+                  <article class="services__card">
+                   <img src="img/services__img/undraw_filing_system_re_56h6.svg" alt="Services__img" class="services__img">
+                   <h3 class="service__title">Recuperación de archivos perdidos</h3>
+                   <p class="services__text">¿Formateaste tu telefono y no hiciste ningún respaldo? ¿Se te borró todos los arvhivos de tus discos duros por accidente? ¿Necesitas recuperar los numeros de contactos de tu telefono? Contactanos y los recuperamos para ti.</p>
+                   <a href="">Leer Más <img src="img/svg_icons/arrow_rigth.svg" alt="" class="services__link__img"></a>                      
+                  </article>
+               </section>
+           </div>
+           
+           
+           
+           
+           
+           
+           
+          </div>
+          <div class="modal-footer">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--------------JAVASCRIPTS-------------------->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/preloader.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/animation.main.js"></script>
+   <!--<script src="js/anime.min.js"></script>-->
+    <!--<script src="js/animation-text-wrap.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Wilkens Tech | Admin</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="icon" href="../img/logo/Logo.png">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="body">
+      <!--------PRELOADER------------>
+    <div class="preloader">
+        <div class="subpreloader">
+            
+        </div>
+        <p class="preloader_text">Cargando</p>
+    </div>
+    <!--------------------------------->
+    
+    
+    <main class="contenedor">
+       
+       <!----------MENU LEFT--------------->
+        <section class="nav__left">
+            <figure class="nav__picture">
+                <img src="../img/logo/Logotext.png" width="100" alt="" class="nav__logo">
+            </figure>
+            
+            <article class="menu">
+                <h4 class="menu__title">Configuracion</h4>
+                
+                <ul class="nav__items">
+                    <li class="nav__item"><a href="" class="nav__links"><img src="../img/admin_icons/user.svg" alt="">Profile</a></li>
+                    <li class="nav__item"><a href="" class="nav__links"><img src="../img/admin_icons/dashboard.svg" alt="">Dashboard</a></li>
+                    <li class="nav__item"><a href="" class="nav__links"><img src="../img/admin_icons/client.svg" alt="">Mis Clientes</a></li>
+                    <li class="nav__item"><a href="" class="nav__links"><img src="../img/admin_icons/project.svg" alt="">Mis proyectos</a></li>
+                    <li class="nav__item"><a href="" class="nav__links"><img src="../img/admin_icons/request.svg" alt="">Solicitudes</a></li>
+                    <li class="nav__item"><a href="" class="nav__links" data-bs-toggle="modal" data-bs-target="#chatmodal"><img src="../img/admin_icons/message.svg" alt="">Mensajes</a></li>
+                </ul>
+            </article>
+            
+        </section>
+        
+        
+        <!---------CONTAINER RIGHT----------------------->
+        <section class="container__right">
+           
+           <!---------------Header------------->
+            <header class="header">
+                <ul class="menu__header">
+                    <li class="menu__opction"><a href="" class="menu__link">Estadisticas</a></li>
+                    <li class="menu__opction"><a href="" class="menu__link">Solicitudes</a></li>
+                    <li class="menu__opction"><a href="" class="menu__link">Usuarios</a></li>
+                    <li class="menu__opction"><a href="" class="menu__link">Rol</a></li>
+                </ul>
+                
+                <ul class="options">
+                    <li class="options__item"><a href="" class="options__link"><img src="../img/admin_icons/notifications.svg" alt="" class="options__img"></a></li>
+                    <li class="options__item"><a href="" class="options__link"><img src="../img/admin_icons/question.svg" alt="" class="options__img"></a></li>
+                    <li class="options__item"><a href="" class="options__link"><img src="../img/admin_icons/chevron_down.svg" alt="" class="options__img"></a></li>
+                </ul>
+            </header>
+             
+             
+             
+              <!-----------------Dashboard-------------------->
+            <article class="MyClients contain">
+                <p class="article__title">
+                    <button class="button__spinning"><img src="../img/admin_icons/plus.svg" alt="" class="spinning__img">Dashboard</button>
+                </p>
+                <div class="article__content">                    
+                    <!-----------Contenido-------------->
+                    <div class="Chart">
+                        <canvas id="myfirstChart">
+                            
+                        </canvas>
+                    </div>
+                    
+                    <div class="Chart">
+                        <canvas id="mysegundChart">
+                            
+                        </canvas>
+                    </div>
+                </div>
+            </article>
+            
+            
+            <!-----------------Mis Clientes------------------------->
+            <article class="MyClients contain">
+                <p class="article__title">
+                    <button class="button__spinning"><img src="../img/admin_icons/plus.svg" alt="" class="spinning__img">Mis Clientes</button>
+                </p>
+                <div class="article__content">
+                   
+                    <div class="card__client">
+                        <img src="../img/admin_icons/user2.svg" width="70" alt="" class="client__img">
+                        <h6 class="client__name">Wilkens Mompoint</h6>
+                        <a class="client__email" href="mailto:mwforlife24@gmail.com">mwforlife24@gmail.com</a>
+                        <button class="client__button client__button--eliminate"><img src="../img/admin_icons/chevron_down.svg" alt="">Eliminar Cliente</button>
+                        <div class="client__details">
+                            <button class="client__button"><img src="../img/admin_icons/user2.svg" alt="">Perfil</button>
+                            
+                             <button class="client__button"><img src="../img/admin_icons/message2.svg" alt="">Contactar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card__client">
+                        <img src="../img/admin_icons/user2.svg" width="70" alt="" class="client__img">
+                        <h6 class="client__name">Wilkens Mompoint</h6>
+                        <a class="client__email" href="mailto:mwforlife24@gmail.com">mwforlife24@gmail.com</a>
+                        <button class="client__button client__button--eliminate"><img src="../img/admin_icons/chevron_down.svg" alt="">Eliminar Cliente</button>
+                        <div class="client__details">
+                            <button class="client__button"><img src="../img/admin_icons/user2.svg" alt="">Perfil</button>
+                            
+                             <button class="client__button"><img src="../img/admin_icons/message2.svg" alt="">Contactar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card__client">
+                        <img src="../img/admin_icons/user2.svg" width="70" alt="" class="client__img">
+                        <h6 class="client__name">Wilkens Mompoint</h6>
+                        <a class="client__email" href="mailto:mwforlife24@gmail.com">mwforlife24@gmail.com</a>
+                        <button class="client__button client__button--eliminate"><img src="../img/admin_icons/chevron_down.svg" alt="">Eliminar Cliente</button>
+                        <div class="client__details">
+                            <button class="client__button"><img src="../img/admin_icons/user2.svg" alt="">Perfil</button>
+                            
+                             <button class="client__button"><img src="../img/admin_icons/message2.svg" alt="">Contactar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card__client">
+                        <img src="../img/admin_icons/user2.svg" width="70" alt="" class="client__img">
+                        <h6 class="client__name">Wilkens Mompoint</h6>
+                        <a class="client__email" href="mailto:mwforlife24@gmail.com">mwforlife24@gmail.com</a>
+                        <button class="client__button client__button--eliminate"><img src="../img/admin_icons/chevron_down.svg" alt="">Eliminar Cliente</button>
+                        <div class="client__details">
+                            <button class="client__button"><img src="../img/admin_icons/user2.svg" alt="">Perfil</button>
+                            
+                             <button class="client__button"><img src="../img/admin_icons/message2.svg" alt="">Contactar</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </article>
+            
+            <!-----------------My Projects-------------------->
+            <article class="MyClients contain">
+                <p class="article__title">
+                    <button class="button__spinning"><img src="../img/admin_icons/plus.svg" alt="" class="spinning__img">Mis Proyectos</button>
+                </p>
+                <div class="article__content">                    
+                    <!-----------Contenido---------------->
+                    
+                </div>
+            </article>
+            
+            
+            
+             <!-----------------Request-------------------->
+            <article class="MyClients contain">
+                <p class="article__title">
+                    <button class="button__spinning"><img src="../img/admin_icons/plus.svg" alt="" class="spinning__img">Solicitudes</button>
+                </p>
+                <div class="article__content">                    
+                    <!-----------Contenido---------------->
+                    <button class="card__request">
+                        <div class="request__content">
+                            <h4 class="request__title">Formateo de PC</h4>
+                            <p class="request__status">Estado: <span class="request__pending">Pendiente</span></p>
+                            <p class="request__begin">Fecha de solicitud: 02-02-2022</p>
+                            <p class="request__finish">Fecha de entrega: 08-02-2022</p>
+                        </div>
+                    </button>
+                    
+                    <button class="card__request">
+                        <div class="request__content">
+                            <h4 class="request__title">Formateo de PC</h4>
+                            <p class="request__status">Estado: <span class="request__revoque">Rechazada</span></p>
+                            <p class="request__begin">Fecha de solicitud: 02-02-2022</p>
+                            <p class="request__finish">Fecha de entrega: 08-02-2022</p>
+                        </div>
+                    </button>
+                    
+                    <button class="card__request">
+                        <div class="request__content">
+                            <h4 class="request__title">Formateo de PC</h4>
+                            <p class="request__status">Estado: <span class="request__pending">Pendiente</span></p>
+                            <p class="request__begin">Fecha de solicitud: 02-02-2022</p>
+                            <p class="request__finish">Fecha de entrega: 08-02-2022</p>
+                        </div>
+                    </button>
+                    
+                    <button class="card__request">
+                        <div class="request__content">
+                            <h4 class="request__title">Formateo de PC</h4>
+                            <p class="request__status">Estado: <span class="request__complete">Completada</span></p>
+                            <p class="request__begin">Fecha de solicitud: 02-02-2022</p>
+                            <p class="request__finish">Fecha de entrega: 08-02-2022</p>
+                        </div>
+                    </button>
+                </div>
+            </article>
+            
+            
+            
+        </section>
+        
+        
+        
+    </main>
+    
+    
+    
+    
+    
+    
+    <!---------------Chat----------------->
+    <div class="modal" tabindex="-1" id="chatmodal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="chat_title">Chat</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <div class="container__chat">
+              <!-----------------Chat Contact----------------->
+               <div class="chat__contact">
+                 
+                  <div class="chat__query">
+                      <h4>Chat</h4>
+                      <a href=""><img src="../img/admin_icons/plus.svg" alt=""></a>
+                  </div>
+                  
+                   <div class="contact__option">
+                       <ul class="option__item">
+                           <li class="option__items option__items--active"><a href="" class="option__link">Direct</a></li>
+                           <li class="option__items"><a href="" class="option__link">Reclamos</a></li>
+                           <li class="option__items"><a href="" class="option__link">Soporte</a></li>
+                       </ul>
+                   </div>
+                   
+                   <div class="contact__search">
+                       <input type="text" placeholder="Buscar...." class="search__input">
+                   </div>
+                   
+                   <div class="contact__details">
+                     
+                     <!-------------------------------------->
+                      <button class="contact__buton">
+                       <span type="button" class=" position-relative">
+                          <img class="contact__picture" src="../img/me.jpg" alt="">
+                          <span class="position-absolute top-0 start-100 translate-middle p-1 bg-success border border-light rounded-circle tick">
+                            <span class="visually-hidden">New alerts</span>
+                          </span>
+                        </span>
+                        
+                          <p class="review">
+                              <span class="person__name">Wilkens Mompoint</span><br>
+                              <span class="contact__message">Buenos dias como les va? todo bien</span>
+                          </p>
+                          
+                          <p class="time__message">
+                              12:20 PM<br>
+                              <span class="message__cant ">03</span>
+                          </p>
+                          
+                      </button>
+                      
+                      
+                      
+                      
+                   </div>
+               </div>
+               
+               <div class="chat__info">
+                 <!---------Chat Info details----------->
+                  <div class="chat__info--details">
+                      <div class="persona__info">
+                          <img src="../img/me.jpg" alt="" class="person__picture">
+                          <p class="person__details">
+                              <span class="person__name">Wilkens Mompoint</span>
+                              <br/>
+                              <span class="last__seen">Ult. visto hace 2 horas</span>
+                          </p>
+                      </div>
+                      
+                      <div class="chat__info--config">
+                          <button class="config"><img class="config__img" src="../img/svg_icons/engranaje.svg" alt=""></button>
+                      </div>
+                      
+                  </div>
+                   <!--------------Chat contenido------------------------->
+                   <div class="content__chat">
+                       <div class="body__chat">
+                         
+                          <!-----------Mensage Received------------------------->
+                          <p class="message__receive">
+                              Hola, buen dia como le va <br>
+                              <span class="time__messages">12:03 PM</span>
+                          </p>
+                           <!-----------Mensage Send------------------------->
+                           <p class="message__out">
+                              Todo bien ¿y vos?<br>
+                              <span class="time__messages">12:04 PM</span>
+                          </p>
+                           
+                            
+                       </div>
+                       <div class="footer__chat">
+                          <form action="">
+                           <input type="text" placeholder="Escribe tu mensaje" class="message__send">
+                             <button class="send" type="submit"><img src="../img/svg_icons/send.svg" alt=""></button>
+                              
+                          </form>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-------------JAVASCRIPTS------------------>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/preloader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/firstChart.js"></script>
+    <script src="../js/secondChart.js"></script>
+    
+    
+ 
+
+</body>
+</html>
