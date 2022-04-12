@@ -163,42 +163,28 @@
            <form action="">
             <div class="row">
                 <div class="col">
-                    <label for="">Nombre:</label>
-                    <input type="text" placeholder="Ingrese Su nombre" class="form__input">
+                    <label for="">Nombre Completo:</label>
+                    <input type="text" placeholder="Ingrese Su nombre" class="form__input login__input">
                 </div>
             </div>
-               
-            <div class="row">
-                <div class="col">
-                    <label for="">Apellido</label>
-                    <input type="text" class="form__input" placeholder="Ingrese su apellido">
-                </div>
-            </div>
-            
             <div class="row">
                 <div class="col">
                     <label for="">Correo electronico</label>
-                    <input type="email" class="form__input" placeholder="Ingrese su correo electronico">
+                    <input type="email" class="form__input login__input" placeholder="Ingrese su correo electronico">
                 </div>
             </div>
             
             <div class="row">
                 <div class="col">
                     <label for="">Usuario:</label>
-                    <input type="text" class="form__input" placeholder="Nombre de usuario">
+                    <input type="text" class="form__input login__input" placeholder="Nombre de usuario">
                 </div>
             </div>
             
             <div class="row">
                 <div class="col">
                     <label for="">Contraseña:</label>
-                    <input type="password" class="form__input" placeholder="Ingrese Su contraseña">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="">Confirmar contraseña:</label>
-                    <input type="password" placeholder="confirmar contraseña" class="form__input">
+                    <input type="password" class="form__input login__input" placeholder="Ingrese Su contraseña">
                 </div>
             </div>
             
@@ -216,28 +202,32 @@
     <!---------------LOGIN MODAL----------------->
     <div class="modal" tabindex="-1" id="loginmodal">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="login__title">Login</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
+        <div class="modal-content login__modal">
+           <div class="login__picture">
+            <img src="img/admin_icons/user2.svg" alt="" class="login__icon"><br/>
+           </div>
+          
           <div class="modal-body">
            
            <form action="">
             <div class="row">
                 <div class="col">
                     <label for="">Usuario:</label>
-                    <input type="text" class="form__input" placeholder="Nombre de usuario">
+                    <input type="text" class="form__input login__input login__input--user" placeholder="Nombre de usuario">
                 </div>
             </div>
             
             <div class="row">
                 <div class="col">
                     <label for="">Contraseña:</label>
-                    <input type="password" class="form__input" placeholder="Ingrese Su contraseña">
+                    <input type="password" class="form__input login__input login__input--password" placeholder="Ingrese Su contraseña">
                 </div>
             </div>
             <div class="row">
+                <div class="col">
+                   <input type="checkbox" class="remember"><label>Recuerdame</label>
+                    
+                </div>
                 <div class="col">
                     <a href="" class="forgot__password">¿Olvidaste tu contraseña?</a>
                 </div>
@@ -252,7 +242,8 @@
           <div class="modal-footer">
            <div class="row">
                <div class="col text-center">
-                 <p class="footer__text">No estas registrado <a href="">Registrate</a></p>
+                 <p class="footer__text">No estas registrado </p>
+                 <a href="" class="register__button">Registrate</a>
                </div>
            </div>
           </div>
@@ -265,13 +256,133 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h3 class="login__title">Compania</h3>
+            <h3 class="login__title">Acerca de</h3>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
+           <div class="company__header">
+               <figure class="company__picture">
+                   <img src="img/logo/Logo.png" alt="me.jpg">
+               </figure>
+               
+               <div class="company__description">
+                   <h1 class="company__titulo">
+                       <span class="company__subtitulo">2</span><br>
+                       <span>Años de experiencia en soluciones de TI & Negocios</span> 
+                   </h1><br>
+                   <p class="company__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum illum esse itaque suscipit enim magni quis alias adipisci qui, cupiditate provident voluptatibus nobis modi doloremque sint ad, expedita nulla eveniet!</p><br>
+                   <p class="company__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sapiente placeat illo id, laboriosam cupiditate, fuga doloribus sint pariatur modi dolor cumque nulla ad, dicta vero dignissimos, magnam nobis! Nesciunt.</p>
+               </div>
+           </div>
+           
+           <h1 class="company__title">Nuestro proceso de trabajo</h1>
+           <div class="progress1">
+                   <div class="progress__ball">
+                       
+                   </div>
+               </div>
+               
+           <div class="working__process">
+               <div class="process__card">
+                   <figure class="process__picture">
+                       <img src="img/me.jpg" alt="" class="process__img">
+                   </figure>
+                       <h3 class="process__step">1</h3>
+                       <h2 class="process__title">Seleccionar Un projecto</h2>
+                       <p class="process__description">Seleccionar un proyecto según nivel de demanda</p>
+               </div>
+               
+                <div class="process__card">
+                   <figure class="process__picture">
+                       <img src="img/me.jpg" alt="" class="process__img">
+                   </figure>
+                       <h3 class="process__step">2</h3>
+                       <h2 class="process__title">Seleccionar Un projecto</h2>
+                       <p class="process__description">Seleccionar un proyecto según nivel de demanda</p>
+               </div>
+               
+                <div class="process__card">
+                   <figure class="process__picture">
+                       <img src="img/me.jpg" alt="" class="process__img">
+                   </figure>
+                       <h3 class="process__step">3</h3>
+                       <h2 class="process__title">Seleccionar Un projecto</h2>
+                       <p class="process__description">Seleccionar un proyecto según nivel de demanda</p>
+               </div>
+               
+                <div class="process__card">
+                   <figure class="process__picture">
+                       <img src="img/me.jpg" alt="" class="process__img">
+                   </figure>
+                       <h3 class="process__step">4</h3>
+                       <h2 class="process__title">Seleccionar Un projecto</h2>
+                       <p class="process__description">Seleccionar un proyecto según nivel de demanda</p>
+               </div>
+           </div>
            
            
+           <!---------Que Dicen los clientes-------------------->
+           <h1 class="company__title">Que Dicen nuestros Clientes</h1>
+           <div class="progress1">
+                   <div class="progress__ball">
+                       
+                   </div>
+               </div>
+               
+               
+               
+            <!---------User Comment----------->   
+          <div class="comment">
+              <div class="comment__content">
+                 <!---------Comment Card--------------->
+                  <div class="comment__card">
+                      <p class="comment__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, nam enim nemo laboriosam modi inventore, explicabo repellendus qui dolores nulla veritatis dolorem maxime temporibus tenetur necessitatibus ipsa maiores quisquam!</span></p>
+                      
+                      <p class="user__comment">
+                          <figure>
+                              <img src="img/admin_icons/user.svg" alt="" class="user__comment--picture">
+                          </figure>
+                          <span class="user__commment--name">Johan Duvan</span>
+                      </p>
+                  </div>
+                  <!--------------------------------------->
+                  
+                  <!---------Comment Card--------------->
+                  <div class="comment__card">
+                      <p class="comment__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, nam enim nemo laboriosam modi inventore, explicabo repellendus qui dolores nulla veritatis dolorem maxime temporibus tenetur necessitatibus ipsa maiores quisquam!</span></p>
+                      
+                      <p class="user__comment">
+                          <figure>
+                              <img src="img/admin_icons/user.svg" alt="" class="user__comment--picture">
+                          </figure>
+                          <span class="user__commment--name">Johan Duvan</span>
+                      </p>
+                  </div>
+                  <!--------------------------------------->
+                  
+                  
+                  <!---------Comment Card--------------->
+                  <div class="comment__card">
+                      <p class="comment__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum labore, nam enim nemo laboriosam modi inventore, explicabo repellendus qui dolores nulla veritatis dolorem maxime temporibus tenetur necessitatibus ipsa maiores quisquam!</span></p>
+                      
+                      <p class="user__comment">
+                          <figure>
+                              <img src="img/admin_icons/user.svg" alt="" class="user__comment--picture">
+                          </figure>
+                          <span class="user__commment--name">Johan Duvan</span>
+                      </p>
+                  </div>
+                  <!--------------------------------------->
+              </div>
           </div>
+          
+          </div>
+          
+          
+          
+          
+          
+          
           <div class="modal-footer">
            
           </div>

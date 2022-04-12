@@ -13,6 +13,15 @@
     font-weight: 600;
     color: var(--titulo-color);
 }
+.company__title{
+    text-align: center;
+    margin: 0px 30px 30px 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 45px
+}
+
+
 
 
 /*Header*/
@@ -165,6 +174,71 @@
     padding: 10px;
 }
 
+.login__picture{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.login__icon{
+    width: 72px;
+    padding: 0;
+    margin: 0;
+}
+
+.login__title{
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.login__input{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(5,45,54);
+    background-color: inherit;
+}
+.login__input--user{
+    background-image: url(../img/admin_icons/user.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.remember{
+    background-color: transparent;
+    margin-right: 6px;
+    
+}
+
+.login__input--password{
+    background-image: url(../img/svg_icons/key.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+    color: #fff;
+}
+.login__modal{
+background: rgb(2,0,36);
+background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 64%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.register__button{
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding:0px 10px 0px 10px;
+    color: gray;
+}
+
+.register__button:hover{
+    color: #fff;
+}
+
 .submit{
    float: right;
     border-radius: 30px;
@@ -259,25 +333,39 @@
 
 .modal__button--login{
     width: 80%;
-    background-color: #FD8160;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    border: 1px solid #fff;
+    border:none;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,118,121,1) 64%, rgba(0,212,255,1) 100%);
 }
 
 .modal__button--login:hover{
-    background-color: #fff;
-    border: 1px solid #FD8160;
-    color: #FD8160;
+background: rgb(0,36,13);
+background: linear-gradient(135deg, rgba(0,36,13,1) 0%, rgba(9,81,121,1) 64%, rgba(0,255,149,1) 100%);
 }
 
+
 .forgot__password{
+    color: inherit;
+    text-decoration: underline;
+}
+.row{
+    margin-top: 10px !important;
+}
+.forgot__password:hover{
     color: gray;
 }
 
 .footer__text{
-    color: gray;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer__text a{
+    color: #fff;
+    text-decoration: underline;
 }
 
 .login__title{
@@ -560,6 +648,159 @@
     padding: 0;
     animation: mover 4s linear infinite;
 }
+
+
+/*****Company********/
+#companymodal .modal-content{
+background: rgb(37,89,56);
+background: linear-gradient(45deg, rgba(37,89,56,1) 0%, rgba(19,51,57,1) 46%, rgba(56,139,87,1) 100%);
+    color: #fff;
+}
+.company__header{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2em;
+}
+
+.company__picture img{
+    width: 500px;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 170%;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 70%;
+}
+
+.company__titulo{
+    font-weight: bold;
+    color: #000:
+}
+
+.company__subtitulo{
+    color: blue;
+    font-size: 120px;
+    float: left;
+}
+
+/*Working process*/
+.working__process{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.process__card{
+    width: 20%;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.process__picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    animation: zoom 2s infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: zoom;
+    object-fit: contain;
+    object-position: center;
+}
+.process__img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.process__title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #fff;
+}
+
+.process__step{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: rgb(12 90 219 /100%);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 26px;
+    margin-top: 90px;
+    position: absolute;
+}
+.process__card:hover > .process__step{
+    animation: subir ease 1s ;
+}
+
+.process__card:not(:hover) > .process__step{
+    animation: bajar ease 1s ;
+}
+
+
+/*User Comment*/
+.comment{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comment__content{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.comment__card{
+    width: 350px;
+   
+}
+
+.comment__text{
+     clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 8% 89%, 0 99%, 0 75%, 0% 75%);
+    background-color: #Fff;
+    color: #000;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: justify;
+    margin: 0;
+}
+
+.user__comment{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+    gap: 1em;
+}
+
+.user__comment--picture{
+    width: 64px;
+}
 /*******************/
 /*Query*/
 @media (max-width: 700px){
@@ -599,6 +840,8 @@
     }
 }
 
+
+
 @keyframes mover{
     from{
         margin-left: 0%;
@@ -610,3 +853,35 @@
     
    
 }
+
+@keyframes zoom{
+    0%, 100%{
+        box-shadow: 0 0 0 5px rgb(12 90 219 /80%);
+    }
+    
+    50%{
+        box-shadow: 0 0 0 8px rgb(12 90 219 /80%);
+    }
+}
+
+@keyframes subir{
+    from{
+        margin-top: 90px;
+    }
+    
+    to{
+        margin-top: 0px;
+    }
+}
+
+
+@keyframes bajar{
+    from{
+        margin-top: 0px;
+    }
+    
+    to{
+        margin-top: 90px;
+    }
+}
+
