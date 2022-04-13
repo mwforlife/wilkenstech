@@ -801,6 +801,36 @@ background: linear-gradient(45deg, rgba(37,89,56,1) 0%, rgba(19,51,57,1) 46%, rg
 .user__comment--picture{
     width: 64px;
 }
+
+#name__user{
+    background-image: url(../img/svg_icons/register/name.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+}
+
+#mail__user{
+    background-image: url(../img/svg_icons/register/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+}
+
+#login__user{
+    background-image: url(../img/svg_icons/register/user.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+}
+
+
+#password__user{
+    background-image: url(../img/svg_icons/register/key.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 30px;
+}
+
 /*******************/
 /*Query*/
 @media (max-width: 700px){
